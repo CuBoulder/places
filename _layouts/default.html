@@ -1,22 +1,56 @@
 <div class="balloon-description cu-map-feed-content">
 <strong>{{ page.title }}</strong>
 <ul>
-  <li>Building Code: {{ page.code }}</li>
-  <li>Room Number" {{ page.room }}</li>
-  <li>Room Type: {{ page.type }}</li>
-  <li>Max Capacity: {{ page.capacity }}</li>
-  <li>Seating Capactiy: {{ page.seating }}</li>
-  <li>Seating Type: {{ page.seating_type }}</li>
-  <li>Room Furniture: {{ page.furniture }}</li>
-  <li>Presentation System: {{ page.presentation }}</li>
-  <li>Number of Displays: {{ page.displays }}</li>
-  <li>Display Input Types: {{ page.input_types }}</li>
-  <li>Sound System: {{ page.sound_system }}</li>
-  <li>DVD/CD Player: {{ page.dvdcd }}</li>
-  <li>Board Type{{ page.board_type }}</li>
-  <li>Lecture Capture: {{ page.lecture_capture }}</li>
-  <li>Clicker Frequency: {{ page.clicker_frequency }}</li>
-  <li>Distance Education: {{ page.distance_education }}</li>
-  <li>Document Camera: {{ page.document_camera }}</li>
-</ul>
+  {% if page.code %}
+    <li>Building Code: {{ page.code }}</li>
+  {% endif %}
+  {% if page.room %}
+    <li>Room Number" {{ page.room }}</li>
+  {% endif %}
+  {% if page.type %}
+    <li>Room Type: {{ page.type }}</li>
+  {% endif %}
+  {% if page.capacity %}
+    <li>Max Capacity: {{ page.capacity }}</li>
+  {% endif %}
+  {% if page.seating %}
+    <li>Seating Capactiy: {{ page.seating }}</li>
+  {% endif %}
+  {% if page.seating_type %}
+    <li>Seating Type: {{ page.seating_type }}</li>
+  {% endif %}
+  {% if page.furniture %}
+    <li>Room Furniture: {{ page.furniture }}</li>
+  {% endif %}
+  {% if page.presentation %}
+    <li>Presentation System: {{ page.presentation }}</li>
+  {% endif %}
+  {% if page.displays %}
+    <li>Number of Displays: {{ page.displays }}</li>
+  {% endif %}
+  {% if page.input_types %}
+    <li>Display Input Types: {{ page.input_types }}</li>
+  {% endif %}
+  {% if page.sound_system %}
+    <li>Sound System: {{ page.sound_system }}</li>
+  {% endif %}
+  {% if page.dvdcd %}
+    <li>DVD/CD Player: {{ page.dvdcd }}</li>
+  {% endif %}
+  {% if page.board_type %}
+    <li>Board Type: {{ page.board_type }}</li>
+  {% endif %}
+  {% if page.lecture_capture %}
+    <li>Lecture Capture: {{ page.lecture_capture }}</li>
+  {% endif %}
+  {% if page.clicker_frequency %}
+    <li>Clicker Frequency: {{ page.clicker_frequency }}</li>
+  {% endif %}
+  {% if page.distance_education %}
+    <li>Distance Education: {{ page.distance_education }}</li>
+  {% endif %}
+  {% if page.document_camera %}
+    <li>Document Camera: {{ page.document_camera }}</li>
+  {% endif %}
+  </ul>
 </div>
