@@ -1,5 +1,5 @@
 <div class="balloon-description cu-map-feed-content">
-  <p><strong>Room Details</strong></p>
+  <h3>Room Details</strong></h3>
 <!-- <strong>{{ page.title }}</strong> -->
 <ul>
   <!--
@@ -11,49 +11,49 @@
   {% endif %}
   -->
   {% if page.type %}
-    <li>Room Type: {{ page.type }}</li>
+  <li><strong>Room Type:</strong> {{ page.type }}</li>
   {% endif %}
   {% if page.capacity %}
-    <li>Max Capacity: {{ page.capacity }}</li>
+    <li><strong>Max Capacity:</strong> {{ page.capacity }}</li>
   {% endif %}
   {% if page.seating %}
-    <li>Seating Capactiy: {{ page.seating }}</li>
+    <li><strong>Seating Capactiy:</strong> {{ page.seating }}</li>
   {% endif %}
   {% if page.seating_type %}
-    <li>Seating Type: {{ page.seating_type }}</li>
+    <li><strong>Seating Type:</strong> {{ page.seating_type }}</li>
   {% endif %}
   {% if page.furniture %}
-    <li>Room Furniture: {{ page.furniture }}</li>
+    <li><strong>Room Furniture:</strong> {{ page.furniture }}</li>
   {% endif %}
   {% if page.presentation %}
-    <li>Presentation System: {{ page.presentation }}</li>
+    <li><strong>Presentation System:</strong> {{ page.presentation }}</li>
   {% endif %}
   {% if page.displays %}
-    <li>Number of Displays: {{ page.displays }}</li>
+    <li><strong>Number of Displays:</strong> {{ page.displays }}</li>
   {% endif %}
   {% if page.input_types %}
-    <li>Display Input Types: {{ page.input_types }}</li>
+    <li><strong>Display Input Types:</strong> {{ page.input_types }}</li>
   {% endif %}
   {% if page.sound_system %}
-    <li>Sound System: {{ page.sound_system }}</li>
+    <li>Sound System:</strong> {{ page.sound_system }}</li>
   {% endif %}
   {% if page.dvdcd %}
-    <li>DVD/CD Player: {{ page.dvdcd }}</li>
+    <li><strong>DVD/CD Player:</strong> {{ page.dvdcd }}</li>
   {% endif %}
   {% if page.board_type %}
-    <li>Board Type: {{ page.board_type }}</li>
+    <li><strong>Board Type:</strong> {{ page.board_type }}</li>
   {% endif %}
   {% if page.lecture_capture %}
-    <li>Lecture Capture: {{ page.lecture_capture }}</li>
+    <li><strong>Lecture Capture:</strong> {{ page.lecture_capture }}</li>
   {% endif %}
   {% if page.clicker_frequency %}
-    <li>Clicker Frequency: {{ page.clicker_frequency }}</li>
+    <li><strong>Clicker Frequency:</strong> {{ page.clicker_frequency }}</li>
   {% endif %}
   {% if page.distance_education %}
-    <li>Distance Education: {{ page.distance_education }}</li>
+    <li><strong>Distance Education:</strong> {{ page.distance_education }}</li>
   {% endif %}
   {% if page.document_camera %}
-    <li>Document Camera: {{ page.document_camera }}</li>
+    <li><strong>Document Camera:</strong> {{ page.document_camera }}</li>
   {% endif %}
   </ul>
 </div>
@@ -69,9 +69,7 @@
   #bln-shell .bln-modal #balloon-content #balloon-details .cu-map-feed-content li {
     list-style:none;
     margin:0;
-    margin-bottom:-1px;
     padding:10px 0;
-    border-top:1px solid #ddd;
     border-bottom:1px solid #ddd;
   }
 </style>
