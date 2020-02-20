@@ -28,10 +28,11 @@
   <li><strong>Clicker Frequency:</strong> {{ page.clicker_frequency }}</li>
   <li><strong>Distance Education:</strong> {{ page.distance_education }}</li>
   <li><strong>Document Camera:</strong> {{ page.document_camera }}</li>
-  <li><strong>Ethernet:</strong> {{ page.ethernet | 'No' }}</li>
-  <li><strong>Computers:</strong> {{ page.computers | None }}</li>
-  <li><strong>Power Outlets:</strong> {{ page.power_outlets | None }}</li>
-  <li><strong>Schedule Type:</strong> {{ page.schedule_type | None }}</li>
+  <li><strong>Ethernet:</strong> {{ page.ethernet | default: 'No' }}</li>
+  <li><strong>Computers:</strong> {{ page.computers | default: None }}</li>
+  <li><strong>Power Outlets:</strong> {{ page.power_outlets | default: None }}</li>
+  <li><strong>Reservations Allowed:</strong> {{ page.reservations | default: 'No' }}</li>
+  <li><strong>Schedule Type:</strong> {{ page.schedule_type | default: None }}</li>
   
 </ul>
 </div>
