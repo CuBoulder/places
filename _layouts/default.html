@@ -10,30 +10,41 @@
     <li>Room Number: {{ page.room }}</li>
   {% endif %}
   -->
-  <li><strong>Room Type:</strong> {{ page.type }}</li>
-  <li><strong>Max Capacity:</strong> {{ page.capacity }}</li>
-  <li><strong>Seating Capacity:</strong> {{ page.seating }}</li>
-  <li><strong>Seating Type:</strong> {{ page.seating_type }}</li>
-  <li><strong>Room Furniture:</strong> {{ page.furniture }}</li>
-  <li><strong>Windows:</strong> {{ page.windows | 'No' }}</li>
-  <li><strong>Presentation System:</strong> {{ page.presentation }}</li>
-  <li><strong>Number of Displays:</strong> {{ page.displays }}</li>
-  <li><strong>Display Input Types:</strong> {{ page.input_types }}</li>
-  <li><strong>Sound System:</strong> {{ page.sound_system }}</li>
-  <li><strong>DVD/CD Player:</strong> {{ page.dvdcd }}</li>
-  <li><strong>Microphone Type:</strong> {{ page.microphone_type }}</li>
-  <li><strong>Number of Microphones:</strong> {{ page.microphons }}</li>
-  <li><strong>Board Type:</strong> {{ page.board_type }}</li>
-  <li><strong>Lecture Capture:</strong> {{ page.lecture_capture }}</li>
-  <li><strong>Clicker Frequency:</strong> {{ page.clicker_frequency }}</li>
-  <li><strong>Distance Education:</strong> {{ page.distance_education }}</li>
-  <li><strong>Document Camera:</strong> {{ page.document_camera }}</li>
-  <li><strong>Ethernet:</strong> {{ page.ethernet | default: 'No' }}</li>
-  <li><strong>Computers:</strong> {{ page.computers | default: None }}</li>
-  <li><strong>Power Outlets:</strong> {{ page.power_outlets | default: None }}</li>
-  <li><strong>Reservations Allowed:</strong> {{ page.reservations | default: 'No' }}</li>
-  <li><strong>Schedule Type:</strong> {{ page.schedule_type | default: None }}</li>
-  
+
+  <li>
+    <ul>
+      <li><strong>Room Type:</strong> {{ page.type }}</li>
+      <li><strong>Reservations Allowed:</strong> {{ page.reservations | default: 'No' }}</li>
+      <li><strong>Max Capacity:</strong> {{ page.capacity }}</li>
+      <li><strong>Seating Capacity:</strong> {{ page.seating }}</li>
+      <li><strong>Seating Type:</strong> {{ page.seating_type }}</li>
+      <li><strong>Room Furniture:</strong> {{ page.furniture }}</li>
+      <li><strong>Windows:</strong> {{ page.windows | 'No' }}</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><strong>Power Outlets:</strong> {{ page.power_outlets | default: None }}</li>
+      <li><strong>Ethernet:</strong> {{ page.ethernet | default: 'No' }}</li>
+      <li><strong>Presentation System:</strong> {{ page.presentation }}</li>
+      <li><strong>Number of Displays:</strong> {{ page.displays }}</li>
+      <li><strong>Display Input Types:</strong> {{ page.input_types }}</li>
+      <li><strong>Computers:</strong> {{ page.computers | default: None }}</li>
+      <li><strong>Sound System:</strong> {{ page.sound_system }}</li>
+      <li><strong>DVD/CD Player:</strong> {{ page.dvdcd }}</li>
+      <li><strong>Microphones:</strong> {{ page.microphones }}</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><strong>Assisted Listening:</strong> {{ page.assisted_listening }}</li>
+      <li><strong>Board Type:</strong> {{ page.board_type }}</li>
+      <li><strong>Lecture Capture:</strong> {{ page.lecture_capture }}</li>
+      <li><strong>Document Camera:</strong> {{ page.document_camera }}</li>
+      <li><strong>Distance Education:</strong> {{ page.distance_education }}</li>
+      <li><strong>Clicker Frequency:</strong> {{ page.clicker_frequency }}</li>
+    </ul>
+  </li>
 </ul>
 </div>
 <style>
@@ -50,5 +61,14 @@
     margin:0;
     padding:10px 0;
     border-bottom:1px solid #ddd;
+    &:last-child {
+      border-bottom:none;
+    }
+  }
+  #bln-shell .bln-modal #balloon-content #balloon-details .cu-map-feed-content ul > li > ul {
+    border-top:4px solid #ddd;
+  }
+  #bln-shell .bln-modal #balloon-content #balloon-details .cu-map-feed-content ul > li:last-child ul {
+    border-bottom:4px solid #ddd;
   }
 </style>
