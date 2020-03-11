@@ -14,7 +14,7 @@
   <li>
     <ul>
       <li><strong>Room Type:</strong> {{ page.type }}</li>
-      <li><strong>Reservations Allowed:</strong> {{ page.reservations | default: 'No' }}</li>
+      <li><strong>Able to Reserve:</strong> {{ page.reservations | default: 'No' }}</li>
       <li><strong>Max Capacity:</strong> {{ page.capacity }}</li>
       <li><strong>Seating Capacity:</strong> {{ page.seating }}</li>
       <li><strong>Seating Type:</strong> {{ page.seating_type }}</li>
@@ -37,7 +37,7 @@
   </li>
   <li>
     <ul>
-      <li><strong>Assisted Listening:</strong> {{ page.assisted_listening }}</li>
+      <li><strong>Assisted Listening System:</strong> {{ page.assisted_listening }}</li>
       <li><strong>Board Type:</strong> {{ page.board_type }}</li>
       <li><strong>Lecture Capture:</strong> {{ page.lecture_capture }}</li>
       <li><strong>Document Camera:</strong> {{ page.document_camera }}</li>
